@@ -1,0 +1,34 @@
+<config>
+	<app>
+		<title>Sprite sorting and culling</title>
+		<organization>UPC</organization>
+	</app>
+	
+	<renderer>
+		<vsync value="false"/>
+	</renderer>
+	
+	<window>
+		<resolution width="1216" height="704" scale="1"/>
+		<fullscreen value="false"/>
+		<borderless value="false"/>
+		<resizable value="false"/>
+		<fullscreen_window value="false"/>
+	</window>
+	<audio>
+		<music volume="128"/>
+		<fx volume="128"/>
+	</audio>
+	<scene>
+		<music path="Assets/Audio/Music/1_Astrub.ogg"/>
+		<textures victory_defeat="Assets/Textures/victory_death.png"/>
+		<texturepaths font="Assets/Fonts/fontx2.png"/>
+		<player x="300" y="300" texturepath="Assets/Textures/NPCs.png"/>
+		<item x="500" y="205" texturepath="Assets/Textures/tree.png"/>
+		
+		<map>
+			<mapfolder path="Assets/Maps/"/>
+			<mapfile path="Assets/Maps/map.tmx"/>
+		</map>
+	</scene>
+</config>

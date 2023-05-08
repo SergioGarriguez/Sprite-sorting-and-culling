@@ -1,5 +1,8 @@
 # Sprite sorting and culling
 
+page: https://sergiogarriguez.github.io/Sprite-sorting-and-culling/
+repository: https://github.com/SergioGarriguez/Sprite-sorting-and-culling/tree/main
+
 ## Sprite sorting
 
   By default, when we try to render a bunch of sprites they are rendered according to the order in which they appear in the code, that is, that the sprite that has been rendered first appears beneath the one that has been rendered later on. This can be a problem if we want a character to be able to hide behind a tree without it looking like if the character had just climbed it or if we want to go both under and over a bridge at different moments, we definitely don't want to fly over it when the character is swiming in the water under it. This means that we have to somehow sort the sprites so that they are ordered in the way we want.

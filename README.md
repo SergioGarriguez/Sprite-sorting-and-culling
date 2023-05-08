@@ -3,11 +3,8 @@
 ## Sprite sorting
 
   By default, when we try to render a bunch of sprites they are rendered according to the order in which they appear in the code, that is, that the sprite that has been rendered first appears beneath the one that has been rendered later on. This can be a problem if we want a character to be able to hide behind a tree without it looking like if the character had just climbed it or if we want to go both under and over a bridge at different moments, we definitely don't want to fly over it when the character is swiming in the water under it. This means that we have to somehow sort the sprites so that they are ordered in the way we want.
-  
-  [[https://github.com/SergioGarriguez/Sprite-sorting-and-culling/blob/main/images/sorting-example.jpg | width = 600px]]
-
-_TeamLogo_
-
+   
+  ![this is a test](https://github.com/SergioGarriguez/Sprite-sorting-and-culling/blob/main/images/sorting-example.jpg)
   
    To solve that issue we have to treat the game as if it had a third dimension that determines how close to the screen it is, as if the game was actually 3d and had an ortographic camera that was pointing in the direction of that axis. This is known as the z axis.
    

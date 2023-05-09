@@ -13,12 +13,7 @@
 class Sprite
 {
 public:
-	Sprite();
-	~Sprite();
-
-	SDL_Texture* texture = NULL;
-	int x = 0, y = 0, layer = 0;
-	const SDL_Rect* section = NULL;
+	// TODO: create class atributes
 
 };
 
@@ -27,18 +22,7 @@ class CompareSprites
 public:
 	bool operator()(const std::shared_ptr<Sprite> sprite1, const std::shared_ptr<Sprite> sprite2)
 	{
-		if (sprite1->layer > sprite2->layer)
-		{
-			return true;
-		}
-		else if (sprite1->layer == sprite2->layer && sprite1->y + sprite1->section->h < sprite2->y + sprite2->section->h)
-		{
-			return false;
-		}
-		else
-		{
-			return true;
-		}
+		// TODO: ceate condition
 	}
 };
 
